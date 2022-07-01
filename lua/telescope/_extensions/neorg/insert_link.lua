@@ -149,7 +149,7 @@ return function(opts)
                 local inserted_file = (function()
                     if entry.file then
                         -- entry.display = string.gsub(entry.display, entry.file..": ", "")
-                        return ":" .. entry.file .. ":"
+                        return ":$/" .. entry.file .. ":"
                     else
                         return ""
                     end
